@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Righteous&family=Titillium+Web&display=swap');
+
+/* styling for entire page */
+body {
+  	background-color: white;
+	text-align: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+/* div that displays the image for each scene, and holds the div containing the game story */
+#game-container {
+    width: 80vw;
+    height: 55vh;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+	background-image: url('https://app.bsd.education/resources/nature-1552091_1280.png');
+}
+
+/* div that holds the <p> for the game story */
+#story-container {
+    margin-bottom: 0px;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    margin-left: -40%;
+    bottom: 3%;
+    border-radius: 5px;
+    background-color: rgba(240, 240, 240, 0.8);
+    border-radius: 5px;
+    border: 6px double rgba(0, 0, 0, 0.6);
+}
+
+/* header for game title */
+h1 {
+	color: black;
+	font-size: 50px;
+    font-family: 'Righteous', cursive;
+}
+
+h5 {
+    display: inline;
+}
+
+/* div that displays the image for each scene, and holds the div containing the game story */
+#game-container {
+    width: 80vw;
+    height: 55vh;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+/* div that holds the <p> for the game story */
+#story-container {
+    margin-bottom: 0px;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    margin-left: -40%;
+    bottom: 3%;
+    border-radius: 5px;
+    background-color: rgba(240, 240, 240, 0.8);
+    border-radius: 5px;
+    border: 6px double rgba(0, 0, 0, 0.6);
+}
+
+/* <p> that displays game story text */
+p {
+    font-size: 24px;
+}
+
+/* buttons for the player choices */
+button {
+    margin: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+	font-size: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    border-radius: 10px;
+    border-width: 3px;
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #000000;
+}
+
+/* styling for the buttons when you hover your cursor over it */
+button:hover {
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    border-color: #ffffff;
+}
+
+/* styling for the buttons when you click them */
+button:focus {
+    outline: none;
+}       
