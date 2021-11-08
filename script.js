@@ -62,7 +62,7 @@ function gameover() {
         buttonContainer.innerHTML = "<button onclick = 'location.reload()'>Restart the game</button><button onclick = 'scene40()' type='button'>Save YCOINS Data</button>";
         gameContainer.style.backgroundImage = "url('')";
     } else if (sanity < 20) {
-
+        sane.play();
         storyText.innerHTML = "Game Over due to sanity: Sorry! Try Again!";
         buttonContainer.innerHTML = "<button onclick = 'location.reload()'>Restart the game</button><button onclick = 'scene40()' type='button'>Save YCOINS Data</button>";
         gameContainer.style.backgroundImage = "url('')";
@@ -115,7 +115,7 @@ function askingDisplay() {
 
 function asking() {
     if (food < 3) {
-        alert("You currently have" + food + "If you don't want to buy, type in 0 or click cancel. If you never want to see this message again, type in 123456789.");
+        alert("You currently have " + food + " food(s) left. If you don't want to buy, type in 0 or click cancel. If you never want to see this message again, type in 123456789.");
         var howmuchfood = prompt("How much food will you buy? Answer with a number. One food is 50000 YCOINS.");
         var howmuchfoodnum = parseFloat(howmuchfood);
         if (howmuchfoodnum * 50000 <= ycoins) {
@@ -128,7 +128,7 @@ function asking() {
             buttonContainer.innerHTML = "<button onclick = 'update()'>Try Buying Again</button>";
         }
     } else if (sanity <= 40) {
-        alert("You have 20 or less sanity left until game over. Pick a number between 1 and 10. If you get it right, you will get some sanity. If you don't want to pick a number, click cancel in the next message. If you never want to see this message again, type in 123456789.");
+        alert("You have " + sanity + " sanity left. If you have less than 20 sanity, it is game over. To get some sanity, pick a number between 1 and 10. If you get it right, you will get some sanity. If you don't want to pick a number, click cancel in the next message. If you never want to see this message again, type in 123456789.");
         var num10 = prompt("Type in your choice of number between 1 and 10.");
         var num10A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
         var num10P = Math.floor(Math.random() * num10A.length);
