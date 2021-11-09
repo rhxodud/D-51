@@ -141,7 +141,7 @@ function scene1() {
 
     storyText.innerHTML = "In this game, YCOINS is the currency. While playing this game, be sure to keep your food in stock, stay sane, and avoid sickness. If your food stock is under 0, game over. Sanity less than 20, game over.";
     buttonContainer.innerHTML = "<button onclick = 'scene2()'>Next</button>";
-    gameContainer.style.backgroundImage = "url('YCOINS_1.4.png')";
+    gameContainer.style.backgroundImage = "YCOINS_1.4.png";
 }
 
 function scene2() {
