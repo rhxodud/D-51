@@ -60,12 +60,12 @@ function gameover() {
         hunger.play();
         storyText.innerHTML = "Game Over due to food: Sorry! Try Again!";
         buttonContainer.innerHTML = "<button onclick = 'location.reload()'>Restart the game</button><button onclick = 'scene40()' type='button'>Save YCOINS Data</button>";
-        gameContainer.style.backgroundImage = "url('')";
+        gameContainer.style.backgroundImage = "url('https://media.istockphoto.com/videos/game-over-red-neon-light-video-video-id1214522274?s=640x640')";
     } else if (sanity < 20) {
         sane.play();
         storyText.innerHTML = "Game Over due to sanity: Sorry! Try Again!";
         buttonContainer.innerHTML = "<button onclick = 'location.reload()'>Restart the game</button><button onclick = 'scene40()' type='button'>Save YCOINS Data</button>";
-        gameContainer.style.backgroundImage = "url('')";
+        gameContainer.style.backgroundImage = "url('https://media.istockphoto.com/videos/game-over-red-neon-light-video-video-id1214522274?s=640x640')";
     }
 }
 
