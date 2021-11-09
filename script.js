@@ -52,8 +52,8 @@ function savingSee() {
     document.getElementById("ycoinsSee").innerHTML = "You had " + localStorage.money + " YCOINS.";
 }
 
-var hunger = new Audio('/img/781f9c15-7143-4fa2-b246-3ed601f83fc0/462087__mar-u02144__hungry-stomach.wav');
-var sane = new Audio('/img/781f9c15-7143-4fa2-b246-3ed601f83fc0/579818__mordecai666__old-man-scream.mp3');
+var hunger = new Audio('462087__mar-u02144__hungry-stomach.wav');
+var sane = new Audio('579818__mordecai666__old-man-scream.mp3');
 
 function gameover() {
     if (food < 0) {
