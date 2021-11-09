@@ -2,8 +2,8 @@
 
 /* styling for entire page */
 body {
-  	background-color: white;
-	text-align: center;
+    background-color: white;
+    text-align: center;
     font-family: 'Overpass', sans-serif;
 }
 
@@ -16,7 +16,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-	background-image: url('/img/781f9c15-7143-4fa2-b246-3ed601f83fc0/gifvirusblue.gif');
+    background-image: url('/img/781f9c15-7143-4fa2-b246-3ed601f83fc0/gifvirusblue.gif');
 }
 
 /* div that holds the <p> for the game story */
