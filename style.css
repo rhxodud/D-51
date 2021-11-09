@@ -5,6 +5,7 @@ body {
     background-color: white;
     text-align: center;
     font-family: 'Overpass', sans-serif;
+	color: black;
 }
 
 /* div that displays the image for each scene, and holds the div containing the game story */
