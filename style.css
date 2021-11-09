@@ -11,7 +11,7 @@ body {
 /* div that displays the image for each scene, and holds the div containing the game story */
 #game-container {
     width: 80vw;
-    height: 55vh;
+    height: 70vh;
     margin: 0 auto;
     background-size: cover;
     background-position: center;
