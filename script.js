@@ -40,7 +40,7 @@ function saving() {
         if (localStorage.money) {
             localStorage.money = ycoins;
         } else {
-            localStorage.money = "undefined";
+            localStorage.money = "not saved";
         }
         alert("Information saved.");
     } else {
@@ -52,20 +52,20 @@ function savingSee() {
     document.getElementById("ycoinsSee").innerHTML = "You had " + localStorage.money + " YCOINS.";
 }
 
-var hunger = new Audio('/img/781f9c15-7143-4fa2-b246-3ed601f83fc0/462087__mar-u02144__hungry-stomach.wav');
-var sane = new Audio('/img/781f9c15-7143-4fa2-b246-3ed601f83fc0/579818__mordecai666__old-man-scream.mp3');
+var hunger = new Audio('462087__mar-u02144__hungry-stomach.wav');
+var sane = new Audio('579818__mordecai666__old-man-scream.mp3');
 
 function gameover() {
     if (food < 0) {
         hunger.play();
         storyText.innerHTML = "Game Over due to food: Sorry! Try Again!";
         buttonContainer.innerHTML = "<button onclick = 'location.reload()'>Restart the game</button><button onclick = 'scene40()' type='button'>Save YCOINS Data</button>";
-        gameContainer.style.backgroundImage = "url('')";
+        gameContainer.style.backgroundImage = "url('https://media-cdn.tripadvisor.com/media/photo-s/17/08/d4/3e/game-over-escape-rooms.jpg')";
     } else if (sanity < 20) {
         sane.play();
         storyText.innerHTML = "Game Over due to sanity: Sorry! Try Again!";
         buttonContainer.innerHTML = "<button onclick = 'location.reload()'>Restart the game</button><button onclick = 'scene40()' type='button'>Save YCOINS Data</button>";
-        gameContainer.style.backgroundImage = "url('')";
+        gameContainer.style.backgroundImage = "url('https://media-cdn.tripadvisor.com/media/photo-s/17/08/d4/3e/game-over-escape-rooms.jpg')";
     }
 }
 
@@ -141,7 +141,7 @@ function scene1() {
 
     storyText.innerHTML = "In this game, YCOINS is the currency. While playing this game, be sure to keep your food in stock, stay sane, and avoid sickness. If your food stock is under 0, game over. Sanity less than 20, game over.";
     buttonContainer.innerHTML = "<button onclick = 'scene2()'>Next</button>";
-    gameContainer.style.backgroundImage = "url('/img/781f9c15-7143-4fa2-b246-3ed601f83fc0/YCOINS_1.4.png')";
+    gameContainer.style.backgroundImage = "url('YCOINS_1.4.png')";
 }
 
 function scene2() {
@@ -227,7 +227,7 @@ function scene12() {
 //     day31 = true;
     storyText.innerHTML = "Day 11";
     buttonContainer.innerHTML = "<button onclick = 'scene13()'>Next</button>";
-    gameContainer.style.backgroundImage = "url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Black_colour.jpg/1200px-Black_colour.jpg')";
+    gameContainer.style.backgroundColor = "black";
 
     if (bunker == true) {
         dailyBunker();
@@ -239,9 +239,9 @@ function scene12() {
 }
 
 function scene13() {
-    storyText.innerHTML = "What job will you choose? Look at the background image to find out more about each job. Click <a href = '/img/781f9c15-7143-4fa2-b246-3ed601f83fc0/job.png' target = 'blank_'>HERE</a> for enlarged full image.";
+    storyText.innerHTML = "What job will you choose? Look at the background image to find out more about each job. Click <a href = 'job.png' target = 'blank_'>HERE</a> for enlarged full image.";
     buttonContainer.innerHTML = "<button onclick = 'scene14()'>Artisit</button><button onclick = 'scene15()'>Scientist</button><button onclick = 'scene16()'>Architect</button><button onclick = 'scene17()'>Youtuber</button><button onclick = 'scene18()'>Doctor</button>";
-    gameContainer.style.backgroundImage = "url('/img/781f9c15-7143-4fa2-b246-3ed601f83fc0/job.png')";
+    gameContainer.style.backgroundImage = "url('job.png')";
 
     update();
 }
